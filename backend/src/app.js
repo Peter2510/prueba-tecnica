@@ -7,7 +7,7 @@ const clienteRoutes = require('./routes/usuario.routes.js')
 
 app.use(express.json())
 app.use(express.urlencoded({extends:false}))
-//app.use(cors({origin: process.env.ORIGIN}))
+app.use(cors())
 
 
 app.use(clienteRoutes)
