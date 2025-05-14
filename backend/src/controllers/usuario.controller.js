@@ -14,7 +14,7 @@ const registrarCliente = async (req, res) => {
 
         //validacion de edad positiva
         if(edad<=0){
-            res.json({ok: false, msj: "La edad debe ser positiva"})
+           return res.json({ok: false, msj: "La edad debe ser positiva"})
         }
 
         //se registra el cliente
