@@ -1,0 +1,8 @@
+CREATE DATABASE prueba_tecnica;
+
+CREATE TABLE usuario(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(175) NOT NULL,
+    edad INT NOT NULL,
+    email VARCHAR(175) NOT NULL
+);
